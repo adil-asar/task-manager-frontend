@@ -5,6 +5,7 @@ import MainLayout from "./components/layout/HomeLayout";
 import Home from "./pages/Home";
 import Login from "./pages/Sigin";
 import Signup from "./pages/Signup";
+import Forgotpassword from "./pages/Forgotpassword";
 
 const AppRoutes = () => {
   return (
@@ -12,7 +13,7 @@ const AppRoutes = () => {
     <Routes>
     {/* Auth Pages */}
     <Route
-      path="/login"
+      path="/signin"
       element={
         <AuthLayout>
           <Login />
@@ -27,6 +28,15 @@ const AppRoutes = () => {
         </AuthLayout>
       }
     />
+
+    <Route
+    path="/forgot-password"
+    element={
+      <AuthLayout>
+        <Forgotpassword />
+      </AuthLayout>
+    }
+  />
 
     {/* Main Pages */}
     <Route
