@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import PageHeader from "../components/common/PageHeader";
+import Container from "../components/tasks/Container";
 
 const Home = () => {
   return (
-    <div className='h-screen w-full bg-slate-200'>Home</div>
-  )
-}
+    <div className="w-full  ">
+      <PageHeader name="All Tasks" />
+      <Container />
+    </div>
+  );
+};
 
-export default Home
+export default Home;

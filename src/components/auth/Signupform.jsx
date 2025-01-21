@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { PiEye } from "react-icons/pi";
 import { PiEyeSlash } from "react-icons/pi";
+import tasklist from "../../assets/task-list.png"
 const Signupform = () => {
   const [showPassword, setShowPassword] = useState(false);
 
@@ -10,8 +11,11 @@ const Signupform = () => {
   };
 
   return (
-    <div className=" md:w-1/2 h-full  flex flex-col justify-center p-10">
-      <div className=" md:w-3/4 mx-auto ">
+    <div className=" md:w-1/2 h-full   px-10">
+    <div className=" md:w-3/5 mx-auto  h-[15vh] flex items-center  ">
+    <img className="w-16   h-16" src={tasklist} alt="task"  />	
+    </div>
+      <div className=" md:w-3/5 mx-auto  flex flex-col justify-center h-[85vh]  ">
         <h1 className="text-3xl font-semibold mb-2 text-[#ff7f50]">
           Create an account
         </h1>

@@ -1,14 +1,14 @@
-import React from 'react';
-import Sidebar from '../portion/Sidebar';
-import Navbar from '../portion/Navbar';
+import React from "react";
+import Sidebar from "../portion/Sidebar";
+import Navbar from "../portion/Navbar";
 
 const MainLayout = ({ children }) => {
   return (
-    <div className="main-layout flex h-screen">
+    <div className="">
       <Sidebar />
-      <div className="content flex-1 flex flex-col">
-        <Navbar />
-        <main className="flex-1 p-4">{children}</main>
+<Navbar />
+      <div className="">
+        <main className="flex-1 ml-[75px]   w-[calc(100%-75px)] mt-[75px]  p-6">{children}</main>
       </div>
     </div>
   );
