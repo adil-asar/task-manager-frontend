@@ -1,19 +1,18 @@
-import React from "react";
+
 import { PiChecksLight } from "react-icons/pi";
 import { PiHeartStraightLight } from "react-icons/pi";
 import { ImBin } from "react-icons/im";
 import { PiPencilSlashFill } from "react-icons/pi";
-const Task = () => {
+import PropTypes from 'prop-types';
+
+const Task = ({task}) => {
   return (
     <div className=" border p-3 dark:border-[#3c6382] border-gray-200 w-full  rounded-md">
       <h3 className="sm:text-lg text-base font-semibold capitalize text-[#ff7f50] mb-2">
-        Task Title
+      { task.title || "Task Title" } 
       </h3>
       <p className="text-sm text-gray-600  dark:text-gray-300 mb-4">
-        {" "}
-        this is my first task created by me . And this is my first task created
-        by me . And this is my first task created by me And this is my first
-        task created by me{" "}
+    { task.description || "Task Description" }
       </p>
 
       <div className="flex justify-between items-center ">
@@ -36,5 +35,13 @@ const Task = () => {
     </div>
   );
 };
+
+Task.propTypes = {
+  task: PropTypes.shape({
+    title: PropTypes.string,
+    description: PropTypes.string,
+  }).isRequired,
+};
+
 
 export default Task;
