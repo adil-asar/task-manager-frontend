@@ -1,10 +1,7 @@
-import React, { useState, useEffect } from 'react';
+
 import tasklist from "../../assets/task-list.png";
-import { Link , useLocation } from "react-router-dom";
+import { Link , useLocation} from "react-router-dom";
 import { PiCirclesFourLight } from "react-icons/pi";
-import { PiPowerLight } from "react-icons/pi";
-import { PiSunLight } from "react-icons/pi";
-import { PiMoonLight } from "react-icons/pi";
 import { PiChecksLight } from "react-icons/pi";
 import { PiHeartStraightLight } from "react-icons/pi";
 const Sidebar = () => {
@@ -26,23 +23,7 @@ const Sidebar = () => {
     },
   ];
 
-  const [darkMode, setDarkMode] = useState(() => {
-    if (localStorage.getItem('theme')) {
-      return localStorage.getItem('theme') === 'dark';
-    }
-    return window.matchMedia('(prefers-color-scheme: dark)').matches;
-  });
-
-  // Apply the dark mode class to the HTML element and save to localStorage
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
-    }
-  }, [darkMode]);
+  const location = useLocation();
 
   
 

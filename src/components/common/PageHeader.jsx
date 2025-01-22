@@ -1,4 +1,6 @@
-import React from 'react'
+
+
+import PropTypes from 'prop-types';
 
 const PageHeader = ({name}) => {
   return (
@@ -9,4 +11,9 @@ const PageHeader = ({name}) => {
   )
 }
 
-export default PageHeader
+PageHeader.propTypes = {
+  name: PropTypes.string.isRequired,
+};
+
+export default PageHeader;
+

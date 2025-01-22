@@ -1,4 +1,4 @@
-import React from 'react'
+
 import AuthImage from  '../../assets/login.png'
 const Intro = () => {
   return (
