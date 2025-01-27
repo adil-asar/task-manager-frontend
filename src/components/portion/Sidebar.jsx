@@ -28,7 +28,7 @@ const Sidebar = () => {
   
 
   return (
-    <aside className=" w-[75px] fixed top-0 left-0 px-3 py-6 border-r border-gray-200 dark:border-[#3c6382]  h-screen flex flex-col   ">
+    <aside className=" w-[75px] fixed top-0 left-0 px-3 py-6 border-r border-gray-200 dark:border-[#3c6382] bg-white dark:bg-[#0a3d62] h-screen flex flex-col   ">
       <div className="mb-24">
         <img src={tasklist} className="mx-auto w-10 " alt="auth image" />
       </div>

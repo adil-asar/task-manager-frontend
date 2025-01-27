@@ -2,6 +2,7 @@
 import Sidebar from "../portion/Sidebar";
 import Navbar from "../portion/Navbar";
 
+// eslint-disable-next-line react/prop-types
 const MainLayout = ({ children }) => {
   return (
     <div className="">

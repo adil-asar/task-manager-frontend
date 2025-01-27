@@ -40,7 +40,7 @@ const [username, setUsername] = useState("");
   };
 
   return (
-    <aside className="ml-[75px]  h-[75px] border-b border-gray-200  dark:border-[#3c6382] flex flex-row items-center fixed top-0 w-[calc(100%-75px)]  justify-between    px-5">
+    <aside className="ml-[75px]  h-[75px] border-b border-gray-200 bg-white dark:bg-[#0a3d62] dark:border-[#3c6382] flex flex-row items-center fixed top-0 w-[calc(100%-75px)]  justify-between    px-5">
       <div className="flex gap-2 items-center ">
         <div className="w-10 h-10 bg-[#f1f2f6] text-gray-600 dark:bg-[#3c6382] dark:text-gray-300 flex items-center mx-auto justify-center rounded">
           <PiUserFocusLight className=" text-2xl" />

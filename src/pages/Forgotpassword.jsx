@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Intro from '../components/auth/Intro'
 
 import ForgotPasswordForm from '../components/auth/ForgotPasswordForm'
